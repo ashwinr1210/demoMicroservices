@@ -21,6 +21,7 @@ public class AdditionController {
 		@PostMapping("/add")
 		public Integer login( @RequestParam int number1,@RequestParam int number2) {
 			Integer result = service.addNumbers(number1,number2);
+			System.out.println("*******************");
 			return result;
 		}
 		
